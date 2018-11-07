@@ -7,7 +7,7 @@ import com.wei.demo.strategy.duck.WoodDuck;
  * @Author: weiwenfeng
  * @Date: 2018/11/7
  */
-public class DuckMainTest {
+public class DuckTest {
     public static void main(String[] args) {
         Duck duck = new RedHeadDcuk();
         duck.display();
