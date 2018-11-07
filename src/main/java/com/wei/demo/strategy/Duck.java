@@ -4,7 +4,7 @@ package com.wei.demo.strategy;
  * @Author: weiwenfeng
  * @Date: 2018/11/7
  *
- * 定义成抽象类而不是接口是因为有swim()这块公共的部分
+ * 定义成抽象类而不是接口是因为有公共的部分
  */
 public abstract class Duck {
 
