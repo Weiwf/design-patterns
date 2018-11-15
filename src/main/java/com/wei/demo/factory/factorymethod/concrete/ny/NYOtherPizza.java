@@ -6,10 +6,12 @@ import com.wei.demo.factory.Pizza;
 /**
  * @Author: weiwenfeng
  * @Date: 2018/11/15
+ *
+ * 纽约other pizza
  */
-public class NYChikenPizza extends Pizza {
+public class NYOtherPizza extends Pizza {
     @Override
     public void prepare() {
-        System.out.println("prepare chikenPizza!");
+        System.out.println("prepare otherPizza!");
     }
 }

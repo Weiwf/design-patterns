@@ -1,5 +1,6 @@
 package com.wei.demo.factory.factorymethod;
 
+import com.wei.demo.factory.Pizza;
 import com.wei.demo.factory.PizzaStore;
 import com.wei.demo.factory.factorymethod.concrete.ny.NYPizzaStoreFactory;
 
@@ -10,6 +11,8 @@ import com.wei.demo.factory.factorymethod.concrete.ny.NYPizzaStoreFactory;
 public class FactoryMethodTest {
     public static void main(String[] args) {
         PizzaStore pizzaStore = new NYPizzaStoreFactory();
-        pizzaStore.orderPizza("cheese");
+        Pizza pizza = pizzaStore.orderPizza("cheese");
+        pizza.prepare();
+        pizza.printInfo();
     }
 }

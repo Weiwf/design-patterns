@@ -23,7 +23,6 @@ public class PizzaStoreA extends PizzaStore {
     @Override
     public Pizza getPizza(String type) {
         Pizza pizza;
-        String suffix = " pizza";
         if (type.equals("cheese")){
             pizza = new CheesePizza(ingredientFactory);
         }else if (type.equals("ham")){
@@ -31,7 +30,7 @@ public class PizzaStoreA extends PizzaStore {
         }else{
             pizza = new OtherPizza(ingredientFactory);
         }
-        pizza.setName(type + suffix);
+        pizza.setName(type + " pizza");
         return pizza;
     }
 }

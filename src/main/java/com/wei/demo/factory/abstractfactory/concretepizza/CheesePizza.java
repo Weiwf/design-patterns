@@ -7,7 +7,7 @@ import com.wei.demo.factory.abstractfactory.IngredientFactory;
  * @Author: weiwenfeng
  * @Date: 2018/11/15
  *
- * cheese pizza 由dough,sause,cheese组成
+ * Cheese pizza 由dough,sause,cheese组成
  */
 public class CheesePizza extends Pizza {
 

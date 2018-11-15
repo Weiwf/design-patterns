@@ -6,6 +6,8 @@ import com.wei.demo.factory.Pizza;
 /**
  * @Author: weiwenfeng
  * @Date: 2018/11/15
+ *
+ * 纽约cheese pizza
  */
 public class NYCheesePizza extends Pizza {
     @Override
