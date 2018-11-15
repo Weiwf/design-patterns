@@ -11,7 +11,7 @@ package com.wei.demo.singleton;
  * (1)给instance分配内存
  * (2)调用new Singleton()初始化成员变量
  * (3)将instance指向分配的内存空间
- * 上面的三个步骤不能乱，否则使用实例的时候将报错
+ * 上面的三个步骤顺序不能乱，否则使用实例的时候将报错
  * volatile将起禁止指令重排的作用
  */
 public class Singleton {
