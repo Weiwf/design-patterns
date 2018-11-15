@@ -6,8 +6,8 @@ package com.wei.demo.factory;
  */
 public abstract class PizzaStore {
 
-    public Pizza orderPizza(String type){
-        Pizza pizza = null;
+    public Pizza orderPizza(String type) {
+        Pizza pizza;
 
         pizza = getPizza(type);
         pizza.bake();

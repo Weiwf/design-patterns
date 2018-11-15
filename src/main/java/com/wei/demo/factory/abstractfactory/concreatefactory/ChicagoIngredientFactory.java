@@ -6,27 +6,26 @@ import com.wei.demo.factory.abstractfactory.IngredientFactory;
  * @Author: weiwenfeng
  * @Date: 2018/11/15
  *
- * 纽约原料工厂
+ * 芝加哥原料工厂
  */
-public class NYIngredientFactory implements IngredientFactory{
-
+public class ChicagoIngredientFactory implements IngredientFactory {
     @Override
     public String createDough() {
-        return "NY dough!";
+        return "Chicago dough!";
     }
 
     @Override
     public String createSause() {
-        return "NY sause!";
+        return "Chicago sause!";
     }
 
     @Override
     public String createCheese() {
-        return "NY cheese!";
+        return "Chicago cheese!";
     }
 
     @Override
     public String createHam() {
-        return "NY ham!";
+        return "Chicago ham!";
     }
 }

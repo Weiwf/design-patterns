@@ -12,17 +12,18 @@ import com.wei.demo.factory.abstractfactory.concretepizza.OtherPizza;
  * @Author: weiwenfeng
  * @Date: 2018/11/15
  */
-public class NYPizzaStore extends PizzaStore {
+public class PizzaStoreA extends PizzaStore {
 
     private IngredientFactory ingredientFactory;
 
-    public NYPizzaStore(IngredientFactory ingredientFactory){
+    public PizzaStoreA(IngredientFactory ingredientFactory){
         this.ingredientFactory = ingredientFactory;
     }
 
     @Override
     public Pizza getPizza(String type) {
-        Pizza pizza = null;
+        Pizza pizza;
+        String suffix = " pizza";
         if (type.equals("cheese")){
             pizza = new CheesePizza(ingredientFactory);
         }else if (type.equals("ham")){
@@ -30,6 +31,7 @@ public class NYPizzaStore extends PizzaStore {
         }else{
             pizza = new OtherPizza(ingredientFactory);
         }
+        pizza.setName(type + suffix);
         return pizza;
     }
 }
